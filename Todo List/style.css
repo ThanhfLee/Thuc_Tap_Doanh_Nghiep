@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#todo-list li span {
+  flex: 1;
+  margin-left: 8px;
+}
+
+#todo-list li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#todo-list li.active span {
+  color: black;
+}
+
+button {
+  margin-left: 5px;
+}

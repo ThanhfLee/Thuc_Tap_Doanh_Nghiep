@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeeTCLO - Cửa hàng Thời trang</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-flex">
+        <a href="index.html" class="logo">LeeTCLO</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+              <a href="#">Shop</a>
+              <ul class="dropdown">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-icons">
+          <a href="login.html" class="nav-icon">
+            <img src="img/user-icon.png" alt="Đăng nhập" />
+          </a>
+          <a href="cart.html" class="nav-icon cart-link">
+            <img src="img/shopping-bag.png" alt="Giỏ hàng" />
+            <span id="cart-badge">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Timeless Elegance</h1>
+        <a href="#products" class="btn">Shop All</a>
+      </div>
+    </section>
+
+    <!-- SẢN PHẨM -->
+    <section
+      id="products"
+      class="products container"
+      aria-label="Danh sách sản phẩm"
+    >
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="product-list">
+        <article class="product" role="article">
+          <img
+            src="img/placeholder1.jpg"
+            alt="Sản phẩm 1 - Blanc Eleganté Polo"
+          />
+          <h3>Blanc Eleganté Polo</h3>
+          <p class="price">
+            <span class="old">800.000đ</span> <span class="new">450.000đ</span>
+          </p>
+          <button
+            class="add-to-cart"
+            aria-label="Thêm sản phẩm Blanc Eleganté Polo vào giỏ hàng"
+          >
+            Thêm vào giỏ
+          </button>
+        </article>
+        <article class="product" role="article">
+          <img src="img/placeholder1.jpg" alt="Sản phẩm 2 - Noir Luxe Tee" />
+          <h3>Noir Luxe Tee</h3>
+          <p class="price">
+            <span class="old">700.000đ</span> <span class="new">420.000đ</span>
+          </p>
+          <button
+            class="add-to-cart"
+            aria-label="Thêm sản phẩm Noir Luxe Tee vào giỏ hàng"
+          >
+            Thêm vào giỏ
+          </button>
+        </article>
+        <!-- Thêm các sản phẩm khác tương tự -->
+      </div>
+    </section>
+
+    <!-- GIỎ HÀNG -->
+    <aside class="cart container" aria-label="Giỏ hàng">
+      <h2>🛒 Giỏ hàng <span id="cart-count">(0)</span></h2>
+      <ul id="cart-items"></ul>
+      <div id="cart-total">Tổng cộng: 0đ</div>
+      <button id="clear-cart-btn">🗑 Xoá tất cả</button>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="modern-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h2>LeeTCLO</h2>
+          <p class="footer-tagline">Thời trang tinh tế cho bạn mỗi ngày.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Vận chuyển</a></li>
+            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Thông tin</h4>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Liên hệ</h4>
+          <p>
+            Email: <a href="mailto:leetclo@example.com">leetclo@example.com</a>
+          </p>
+          <p>Hotline: 0123 456 789</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 LeeTCLO. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="js/main.js"></script>
+    <!-- THÔNG BÁO NỔI -->
+    <div id="notification" role="status" aria-live="polite"></div>
+  </body>
+</html>
